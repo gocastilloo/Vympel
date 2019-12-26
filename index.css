@@ -1,0 +1,401 @@
+:root{
+    --green:#2A7D2E;
+    --dark-green:#124A2F;
+    --text-color:#A0A0A0;
+    --white:#ffffff;
+    --muted-grey:#FBF9F6;
+}
+@font-face{
+    font-family: 'Montserrat-thin';
+    src: url("./assets/Fonts/Montserrat-Thin.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-light';
+    src: url("./assets/Fonts/Montserrat-Light.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-medium';
+    src: url("./assets/Fonts/Montserrat-Medium.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-semibold';
+    src: url("./assets/Fonts/Montserrat-SemiBold.ttf");
+}
+@font-face{
+    font-family: 'Montserrat-bold';
+    src: url("./assets/Fonts/Montserrat-Bold.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Montserrat-medium',sans-serif;
+    overflow-x: hidden;
+}
+
+.buttonSolid{
+    cursor: pointer;
+    background-color: var(--green); 
+    border: none;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    width: 150px;
+    height: 50px;
+    font-family: 'Montserrat-medium',sans-serif;
+    font-size: 1.6rem;
+    outline: none;
+    transition: all .4s;
+}
+.buttonTransparent{
+    cursor: pointer;
+    background-color: transparent; 
+    border: 1px solid var(--white);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10rem;
+    width: 15rem;
+    height: 5rem;
+    font-family: 'Montserrat-medium',sans-serif;
+    font-size: 1.6rem;
+    outline: none;
+    transition: all .4s;
+}
+
+.input{
+    border-radius: 100px;
+    border: 1px solid var(--text-color);
+    padding: 15px;
+    font-family: 'Montserrat-light',sans-serif;
+    font-size: 18px;
+    outline: none;
+}
+.input.textarea{
+    border-radius: 20px;
+    resize: none;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+.nav{
+    height:9rem;
+    width: 100%;
+    background-color:transparent;
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    padding: 0 6rem;
+}
+.nav-logo{
+    background-image: url(./assets/Images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20rem;
+    height: 6rem;
+}
+.nav-menu ul{
+    display: flex;
+    color: var(--white);
+}
+.nav-item{
+    list-style: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+.nav-item:not(:last-child){
+    margin-right: 2rem;
+}
+.nav-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-btn button:hover{
+    background-color: var(--dark-green);
+}
+.hero{
+    background-image: url(./assets/Images/garden1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+.hero h1{
+    font-size: 7rem;
+    font-family: 'Montserrat-bold',sans-serif;
+}
+.hero p{
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+.hero-btn:hover{
+    background-color: var(--green);
+    border-color: var(--green);
+}
+.services-section{
+    width: 100%;
+    position: relative;
+    height: 28rem;
+}
+.services-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
+    padding: 6rem 0;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 10rem;
+    background-color: var(--white);
+
+}
+.services-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 6rem;
+    width: 33.33333%;
+}
+.services-item:not(:last-child){
+    border-right: 1px solid rgba(0,0,0,.2);
+}
+.services-item h2{
+    color: var(--green);
+    font-family: 'Montserrat-light',sans-serif;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+.services-item p{
+    font-size: 1.6rem;
+    color: var(--text-color);
+    text-align: center;
+    font-family: 'Montserrat-light',sans-serif;
+}
+.services-icon.tree{
+    background: url(./assets//Images/Icons/tree.svg);
+}
+.services-icon.house{
+    background: url(./assets//Images/Icons/house.svg);
+}
+.services-icon.lawn{
+    background: url(./assets//Images/Icons/lawn.svg);
+}
+.services-icon.tree,.services-icon.house,.services-icon.lawn{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8rem;
+    height: 8rem;
+}
+.grass{
+    position: absolute;
+    height: 1rem;
+    top: -1rem;
+    width: 98%;
+    background-image: url(./assets/Images/Icons/grass.svg);
+}
+.ourWork-section{
+    width: 100%;
+}
+.ourWork-info{
+    width: 100%;
+    padding: 6rem;
+}
+.ourWork-info h2{
+    color: var(--green);
+    font-size: 7rem;
+    font-family: 'Montserrat-thin',sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.ourWork-info p{
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-family: 'Montserrat-light',sans-serif;
+    text-align: center;
+}
+.gallery-section{
+    width: 100%;
+    background-color: var(--muted-grey);
+    padding: 60px 0;
+}
+.gallery-section h2{
+    color: var(--dark-green);
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Montserrat-light',sans-serif;
+    padding-bottom: 6rem;
+}
+.gallery-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.gallery-row{
+    width: 100%;
+    height: 384px;
+    display: flex;  
+    margin-bottom: 2rem;
+}
+.gallery-item{
+    width: 33.333%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+.gallery-item:not(:nth-child(3n)){
+    width: calc(33.3333% - 2rem);
+    height: 100%;
+    margin-right: 2rem;
+}
+.img1{
+    background-image: url(./assets/Images/garden4.jpg);
+}
+.img2{
+    background-image: url(./assets/Images/garden5.jpg);
+}
+.img3{
+    background-image: url(./assets/Images/garden6.jpg);
+}
+.img4{
+    background-image: url(./assets/Images/garden7.jpg);
+}
+.img5{
+    background-image: url(./assets/Images/garden8.jpg);
+}
+.img6{
+    background-image: url(./assets/Images/garden9.jpg);
+}
+.img7{
+    background-image: url(./assets/Images/garden10.jpg);
+}
+.img8{
+    background-image: url(./assets/Images/garden11.jpg);
+}
+.img9{
+    background-image: url(./assets/Images/garden12.jpg);
+}
+
+.gallery-btn{
+    margin: 0 auto;
+    margin-top: 6rem;
+}
+.gallery-btn:hover{
+    background-color: var(--dark-green);
+}
+.contact-btn:hover{
+    background-color: var(--dark-green);
+}
+.contact-btn{
+    margin: 0 auto;
+}
+.contact-section{
+    width: 100%;
+    padding: 6rem 0;
+}
+.contact-section h2{
+text-align: center;
+color: var(--dark-green);
+font-size: 6rem;
+margin-bottom: 2rem;
+}
+.contact-form{
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+.contact-textarea{
+    width: 80%;
+    height: 150px;
+    margin-bottom: 2rem;
+}
+footer{
+    width: 100%;
+    background-color: var(--muted-grey);
+    padding: 6rem;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-btn:hover{
+    background-color: var(--dark-green);
+}
+.footer-btn{
+    margin-bottom: 4rem;
+}
+.footer-info{
+    font-size: 18px;
+    font-family: 'Montserrat-thin',sans-serif;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.footer-info p{
+    color:black;
+}
+.footer-facebook,.footer-instagram,.footer-twitter{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+.footer-social{
+    display: flex;
+}
+.footer-facebook{
+    background-image: url(./assets/Images/Icons/facebook.svg);
+}
+.footer-instagram{
+    background-image: url(./assets/Images/Icons/instagram.svg);
+}
+.footer-twitter{
+    background-image: url(./assets/Images/Icons/twitter.svg);
+}
+.footer-social{
+    margin-bottom:4rem;
+}
+.footer-copy p{
+    font-family: 'Montserrat-thin',sans-serif;
+    font-size: 16px;
+    color:black;
+
+}
+
