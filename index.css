@@ -1,5 +1,6 @@
 :root{
     --green:#2A7D2E;
+    --light-green:rgb(55, 173, 59);
     --dark-green:#124A2F;
     --text-color:#A0A0A0;
     --white:#ffffff;
@@ -38,6 +39,76 @@ html{
 body{
     font-family: 'Montserrat-medium',sans-serif;
     overflow-x: hidden;
+}
+.contact-info-fixed{
+    position: fixed;
+    top: 20rem;
+    left: -34rem;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    transition: all .8s;
+}
+.contact-info-row{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 6rem;
+    width: 40rem;
+    margin-bottom: 1rem;
+    background-color: var(--light-green);
+    transition: all .4s;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.contact-info-row p{
+    font-size: 18px;
+    color: var(--white);
+    text-align: center;
+    margin-right: 5rem;
+}
+.contact-icon{
+    background-color: var(--green);
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    height: 6rem;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.phone{
+    background-image: url(./assets/Images/Icons/phone.svg);
+}
+.map{
+    background-image: url(./assets/Images/Icons/map.svg);
+}
+.calendar{
+    background-image: url(./assets/Images/Icons/calendar.svg);
+}
+.phone,.map,.calendar{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 3rem;
+    height: 3rem;
+}
+.contact-info-row.phone-row,.contact-info-row.map-row,.contact-info-row.calendar-row{
+    transition: all .4s;
+}
+.contact-info-row.phone-row:hover{
+    left: 34rem;
+}
+.contact-info-row.map-row:hover{
+    left: 34rem;
+}
+.contact-info-row.calendar-row:hover{
+    left: 34rem;
 }
 
 .buttonSolid{
@@ -157,28 +228,34 @@ body{
 .services-section{
     width: 100%;
     position: relative;
-    height: 28rem;
+    padding-bottom: 75rem;
 }
 .services-wrapper{
     width: 90%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     box-shadow: 0 3px 5px rgba(0,0,0,.2);
     padding: 6rem 0;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
-    top: 10rem;
+    top: 35rem;
     background-color: var(--white);
 
 }
+.services-row{
+    width: 100%;
+    display: flex;
+    margin-bottom: 6rem;
+}
 .services-item{
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding:0 6rem;
-    width: 33.33333%;
+    width: calc(33.33333% - 2px);
 }
 .services-item:not(:last-child){
     border-right: 1px solid rgba(0,0,0,.2);
@@ -187,7 +264,8 @@ body{
     color: var(--green);
     font-family: 'Montserrat-light',sans-serif;
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
+    padding-top: 10rem;
     margin-bottom: 2rem;
 }
 .services-item p{
@@ -195,22 +273,52 @@ body{
     color: var(--text-color);
     text-align: center;
     font-family: 'Montserrat-light',sans-serif;
+    padding-bottom: 8rem;
 }
-.services-icon.tree{
-    background: url(./assets//Images/Icons/tree.svg);
+.viewMore-btn{
+    border-color: var(--green);
+    color: var(--green);
+    position: absolute;
+    transform: translate(-50%,0);
+    left: 50%;
+    bottom: 0;
 }
-.services-icon.house{
-    background: url(./assets//Images/Icons/house.svg);
+.viewMore-btn:hover{
+    background-color: var(--green);
+    color: var(--white);
 }
-.services-icon.lawn{
-    background: url(./assets//Images/Icons/lawn.svg);
+.services-icon.icon1{
+    background-image: url(./assets//Images/Icons/service1.svg);
 }
-.services-icon.tree,.services-icon.house,.services-icon.lawn{
+.services-icon.icon2{
+    background-image: url(./assets//Images/Icons/services3.svg);
+}
+.services-icon.icon3{
+    background-image: url(./assets//Images/Icons/service5.svg);
+}
+.services-icon.icon4{
+    background-image: url(./assets//Images/Icons/service6.svg);
+}
+.services-icon.icon5{
+    background-image: url(./assets//Images/Icons/service2.svg);
+}
+.services-icon.icon6{
+    background-image: url(./assets//Images/Icons/service7.svg);
+}
+
+.services-icon.icon1,
+.services-icon.icon2,
+.services-icon.icon3,
+.services-icon.icon4,
+.services-icon.icon5,
+.services-icon.icon6{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     width: 8rem;
     height: 8rem;
+    position: absolute;
+    top: 0;
 }
 .grass{
     position: absolute;
@@ -365,6 +473,9 @@ footer{
     text-align: center;
     margin-bottom: 4rem;
 }
+.footer-info p:not(:last-child){
+    margin-bottom: 2rem;
+}
 .footer-info p{
     color:black;
 }
@@ -374,17 +485,19 @@ footer{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-right: 4rem;
     cursor: pointer;
 }
 .footer-social{
     display: flex;
+    justify-content: space-between;
 }
 .footer-facebook{
     background-image: url(./assets/Images/Icons/facebook.svg);
+    margin-right: 4rem;
 }
 .footer-instagram{
     background-image: url(./assets/Images/Icons/instagram.svg);
+    margin-right: 4rem;
 }
 .footer-twitter{
     background-image: url(./assets/Images/Icons/twitter.svg);
