@@ -34,27 +34,26 @@
             </div>
             <div class="nav-menu">
                 <ul>
-                    <li class="nav-item">HOME</li>
-                    <li class="nav-item">SERVICES</li>
-                    <li class="nav-item">WORKS</li>
-                    <li class="nav-item">OUR SERVICES</li>
-                    <li class="nav-item">ABOUT</li>
-                    <li class="nav-item">MISSION</li>
-                    <li class="nav-item">CONTACT</li>
+                    <a class="nav-item home" href="#home"><li>HOME</li></a>
+                    <a class="nav-item about" href="./templates/About.html"><li>ABOUT</li></a>
+                    <a class="nav-item services" href="#services"><li>SERVICES</li></a>
+                    <a class="nav-item gallery" href="#gallery"><li>GALLERY</li></a>
+                    <a class="nav-item tips"><li class="nav-item">TIPS & NEWS</li></a>
+                    <a class="nav-item contact" href="#contact"><li>CONTACT</li></a>
                 </ul>
             </div>
             <div class="nav-btn">
-                <button class="buttonSolid">Quote</button>
+                <button class="buttonSolid">Free Quote</button>
             </div>
         </nav>
-        <section class="hero">
+        <section id="home" class="hero">
             <h1>Wesley's</h1>
             <p>Landscape & Lawncare</p>
-            <button class="hero-btn buttonTransparent">About us</button>
+            <button class="hero-btn buttonSolid">JOIN OUR TEAM</button>
         </section>
         <section class="services-section">
             <div class="services-wrapper">
-                <div class="grass"></div>
+                <div id="services" class="grass"></div>
                 <div class="services-row">
                     <div class="services-item">
                         <div class="services-icon icon1"></div>
@@ -114,7 +113,7 @@
                 </p>
             </div>
         </section>
-        <section class="gallery-section">
+        <section id="gallery" class="gallery-section">
                 <h2>Gallery</h2>
             <div class="gallery-wrapper">
                 <div class="gallery-row">
@@ -135,7 +134,47 @@
             </div>
             <button class="gallery-btn buttonSolid">Gallery</button>
         </section>
-        <section class="contact-section">
+
+        <section class="Comments-section">
+                <div id="slider">
+                        <div class="container">
+                            <div class="ourClients-slide-wrapper slide">
+                                    <h3 class="ourClients-slide">Our Clients</h3>
+                            </div>
+                          <div class="slide">
+                            <h3>Tara Webber</h3>
+                            <p>
+                              "I have seen a lot of landscaping  but this by far the BEST company and it is a family own business that has been arround
+                              for years. This business has grown A LOT over the last 15 years and will grown even more"
+                            </p>
+                          </div>
+                          <div class="slide">
+                            <h3>Bill Clayton</h3>
+                            <p>
+                              "I had 2 different Wesley crews in 2 days doing 2 parts of a landscaping job for me.
+                              Both crews excellent in terms of work performed, timeliness, and professionalism.
+                              I am happy to recommend Wesley´s landscape and lawncare."
+                            </p>
+                          </div>
+                          <div class="slide">
+                            <h3>Matthew Haden</h3>
+                            <p>
+                              "Wesley´s did and awesome job prepping and laying mulch at our house.
+                              They charged a reasonable amount did it with-in a few hours time.
+                              Our 10 year old house looks new again thanks to the crisp mulch bed!"
+                            </p>
+                          </div>
+                          <div class="slide">
+                            <h3>Ben Lovett</h3>
+                            <p>
+                             "Been using Wesley's for 2 years now and my yard has never looked better."
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+        </section>
+
+        <section id="contact" class="contact-section">
             <h2>CONTACT</h2>
             <div class="contact-form">
                 <div class="contact-row">
