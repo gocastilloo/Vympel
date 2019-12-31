@@ -177,8 +177,10 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     padding: 0 6rem;
+    z-index: 100;
+    box-shadow: 0 3px 5px rgba(0,0,0,.2);
 }
 .nav-logo{
     background-image: url(./assets/Images/wesleysLogo.jpg);
@@ -214,20 +216,11 @@ a{
     background-color: var(--dark-green);
 }
 .hero{
-    background-image: url(./assets/Images/garden1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--white);
+    position: relative;
 }
-.hero-about{
-    background-image: url(./assets/Images/garden13.jpg);
+.hero-about,.hero-lawn-maintance,.hero-landscape,.hero-comercial{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -239,15 +232,40 @@ a{
     align-items: center;
     color: var(--white);
 }
-.hero h1{
+.hero-about{
+    background-image: url(./assets/Images/garden13.jpg);
+}
+.hero-lawn-maintance{
+    background-image: url(./assets/Images/imageService1.jpg);
+    background-position: unset;
+}
+.hero-landscape{
+    background-image: url(./assets/Images/imageService2.jpg);
+}
+.hero-comercial{
+    background-image: url(./assets/Images/imageService3.jpg);
+}
+.hero-info{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;  
+    z-index: 2;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-info h1{
     font-size: 7rem;
     font-family: 'Montserrat-bold',sans-serif;
 }
-.hero p{
+.hero-info p{
     font-size: 1.8rem;
     margin-bottom: 2rem;
 }
-.hero-btn{
+.hero-info-btn{
     width: 200px;
     height: 60px;
     font-size: 20px;
@@ -542,7 +560,11 @@ footer{
 }
 
 
-
+/* 
+////////////////////////
+SLIDER 1 COMMENTS
+///////////////////////
+ */
 
 .Comments-section{
     margin: 10rem 0;
@@ -590,7 +612,49 @@ footer{
     font-size: 80px !important;
   }
 
-  
+  /* 
+////////////////////////
+SLIDER 2 HERO
+///////////////////////
+ */
+
+ .slider {
+    width: 100%;
+    height: 100%;
+	margin: auto;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
 
 /* 
 ////////////////////
@@ -725,6 +789,96 @@ align-items: center;
 }
 
 
+
+
+
+/* 
+///////////////////
+SERVICES
+///////////////////
+ */
+
+/* SERVICE 1 */
+
+.lawn-maintenance{
+    padding: 10rem;
+}
+.lawn-maintenance-info h1{
+    color: var(--green);
+    font-size: 7rem;
+    font-family: 'Montserrat-semibold',sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.lawn-maintenance-info p{
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+.lawn-maintenance-list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+.lawn-maintenance-list h3{
+    color: var(--green);
+    font-size: 3rem;
+    padding: 10rem 0;
+    text-align: center;
+}
+.lawn-maintenance-item{
+    display: flex;
+    flex-direction:column;
+    width:60%;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    border-bottom: 2px dashed var(--green);
+    text-align: center;
+}
+.lawn-maintenance-item:nth-child(1n){
+    font-size: 2rem;
+    color: black;
+    font-family: 'Montserrat-semibold',sans-serif;
+}
+.list-number{
+    color: var(--green);
+    font-size: 5rem;
+}
+.lawn-maintenance-aeration{
+    padding-top: 10rem;
+}
+.lawn-maintenance-aeration h2{
+    color: var(--green);
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.lawn-maintenance-aeration p{
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+}
+.lawn-maintenance-subTitle{
+    font-size: 6rem;
+    color: var(--green) !important;
+    text-align: center;
+}
+
+.pruning,.spring{
+    font-size:2.8rem;
+    color: var(--green);
+}
+.spring{
+    margin-bottom: 2rem;
+}
+.spring-text{
+    font-size: 2rem;
+    font-family: 'Montserrat-Light',sans-serif;
+}
 
   /* [ANIMATION] */
   @keyframes slide-animation {
