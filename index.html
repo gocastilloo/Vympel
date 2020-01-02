@@ -9,17 +9,17 @@
     <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 </head>
 <body>
-    <div class="container">
         <div class="mobile-menu">
-            <ul>
-                <li class="mobile-menu-item">HOME</li>
-                <li class="mobile-menu-item">ABOUT</li>
-                <li class="mobile-menu-item">SERVICES</li>
-                <li class="mobile-menu-item">GALLERY</li>
-                <li class="mobile-menu-item">TIPS & NEWS</li>
-                <li class="mobile-menu-item">CONTACT</li>
-            </ul>
+                <ul>
+                    <a id="mobile-nav" href="#home"><li class="mobile-menu-item">HOME</li></a>
+                    <a id="mobile-nav" href="./templates/About.html"><li class="mobile-menu-item">ABOUT</li></a>
+                    <a id="mobile-nav" href="#services"><li class="mobile-menu-item">SERVICES</li></a>
+                    <a id="mobile-nav" href="#gallery"><li class="mobile-menu-item">GALLERY</li></a>
+                    <a id="mobile-nav" href=""><li class="mobile-menu-item">TIPS & NEWS</li></a>
+                    <a id="mobile-nav" href="#contact"><li class="mobile-menu-item">CONTACT</li></a>
+                </ul>
         </div>
+    <div class="container">
         <div class="contact-info-fixed">
             <div class="contact-info-row phone-row">
                 <p>(317) 867-1796</p>
@@ -83,7 +83,7 @@
                 </ul>
             </div>
         </section>
-        <section class="services-section">
+        <section id="services" class="services-section">
             <div class="services-wrapper">
                 <div id="services" class="grass"></div>
                 <div class="services-row">

@@ -191,6 +191,8 @@ a{
     background-position: center;
     width: 20rem;
     height: 6rem;
+    position: relative;
+    z-index: 3;
 }
 .nav-menu ul{
     display: flex;
@@ -205,7 +207,7 @@ a{
 }
 .home:hover,.about:hover,.services:hover,.gallery:hover,.tips:hover,.contact:hover{
     border-bottom: 2px solid var(--green);
-}
+} 
 .nav-item:not(:last-child){
     margin-right: 2rem;
 }
@@ -924,7 +926,7 @@ SERVICES
     left: 0;
     width: 100%;
     top:-30rem;
-    z-index: 2;
+    z-index: 100;
     transition: top .8s;
 }
 .mobile-menu-item{
@@ -941,11 +943,11 @@ SERVICES
 .mobile-menu-item:not(:last-child){
     border-bottom: 1px solid var(--text-color);
 }
-.mobile-menu-item:hover{
+/* .mobile-menu-item:hover{
     background-color: var(--green);
     color: var(--white);
     transition: all .4s;
-}
+} */
 /* 
 ///////////////////////////////
  MEDIA QUERIES
@@ -953,7 +955,6 @@ SERVICES
  */
 
 @media (max-width:1025px){
-
     .nav{
         display: flex;
         justify-content: center;
@@ -1000,12 +1001,202 @@ SERVICES
     }
     .mobile-menu{
         display: block;
+        position: fixed;
+        box-shadow: 0 3px 5px rgba(0,0,0,.2);
     }
     .mobile-open{
         top: 9rem;
     }
+    .hero{
+        height: 50vh;
+    }
+    .services-section{
+        padding-bottom: 90rem;
+    }
+    .hero-about,.hero-lawn-maintance,.hero-landscape,.hero-comercial,.hero-hardscaping,.hero-fertilization,.hero-snow{
+        height: 30vh;
+    }
 }
 
+
+@media (max-width:900px){
+
+.services-item{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.services-item:not(:last-child){
+    border: none;
+}
+.services-row{
+    flex-direction: column;
+}
+.services-wrapper{
+    position: unset;
+    transform: translate(0,0);
+}
+.services-section{
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+}
+.grass{
+    display: none;
+}
+.gallery-row{
+    height: auto;
+    flex-direction: column;
+    margin-bottom:0;
+}
+.gallery-item{
+    width: 100% !important;
+    height: 28rem !important;
+    margin-bottom:2rem;
+}
+.mission{
+    flex-direction: column;
+    width: 100%;
+}
+.mission-text,.mission-img{
+    width: 100%;
+}
+.mission-text{
+    text-align: center;
+    padding: 2rem;
+}
+.timeline{
+    height:250rem;
+}
+}
+
+@media (max-width:769px){
+    .timeline{
+        height: 300rem;
+    }
+    #slider .slide{
+        padding:10px 5rem;
+    }
+    .lawn-maintenance-info h1{
+        font-size: 6rem;
+    }
+}
+@media (max-width:500px){
+    .contact-form{
+        width: 100%;
+        padding: 0 2rem;
+    }
+    .burger-menu{
+        width:4rem;
+        left:2rem;
+    }
+    .nav-logo{
+        width: 15rem;
+    }
+    .slider img{
+        height: 100%;
+    }
+    .slider li{
+        height:30rem;
+    }
+    .hero-info{
+        top: 60%;
+    }
+    .hero-info h1{
+       font-size: 4rem;
+    }
+    .hero-info p{
+        text-align: center;
+    }
+    .hero-info-btn{
+        width: 150px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+    .ourWork-info{
+        padding: 2rem;
+    }
+    .ourWork-info h2{
+        font-size: 4rem;
+    }
+    .services-item{
+        padding: 0 2rem;
+    }
+    .slide p{
+        font-size:1.8rem;
+    }
+    .ourClients-slide-wrapper h3{
+        font-size: 4rem !important;
+    }
+    #slider,  #slider .slide{
+        width: 340px;
+      }
+    #slider .slide{
+        padding: 1rem 2rem;
+    }
+    .footer-copy p{
+        text-align: center;
+    }
+    .hero-about{
+        height: 40vh;
+    }
+    .about-title h1{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .lawn-maintenance{
+        padding: 2rem;
+    }
+    .lawn-maintenance-item{
+        width: 100%;
+    }
+    .lawn-maintenance-item:nth-child(n){
+        font-size: 1.5rem;
+        color: rgba(0,0,0,.8)
+    }
+    .about-title{
+        padding: 6rem 0;
+    }
+    .about-mission{
+        padding: 5rem 0;
+    }
+    .list-number{
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+    .lawn-maintenance-info h1, .lawn-maintenance-aeration h2{
+        font-size: 3rem;
+    }
+    .lawn-maintenance-info p, .lawn-maintenance-aeration p{
+        font-size: 1.5rem;
+    }
+    .hero-lawn-maintance {
+        background-position: 0 70px;
+    }
+    .contact-section h2{
+        font-size: 4rem;
+    }
+    .lawn-maintenance-list.ourDesign h3{
+        font-size: 2rem;
+    }
+    .lawn-maintenance-list h3{
+        padding: 6rem 0;
+        font-size: 2rem;
+    }
+    .spring-text{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:500px) and (min-height:730px){
+    .hero-info{
+        top: 47%;
+    }
+}
+@media (max-width:500px) and (min-height:890px){
+    .hero-info{
+        top: 42%;
+    }
+}
 
 
 
