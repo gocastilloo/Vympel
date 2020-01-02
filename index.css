@@ -110,6 +110,9 @@ a{
 .contact-info-row.phone-row,.contact-info-row.map-row,.contact-info-row.calendar-row{
     transition: all .4s;
 }
+.contact-info-row.phone-row p,.contact-info-row.map-row p,.contact-info-row.calendar-row p{
+    font-size: 1.5rem;
+}
 .contact-info-row.phone-row:hover{
     left: 34rem;
 }
@@ -119,6 +122,10 @@ a{
 .contact-info-row.calendar-row:hover{
     left: 34rem;
 }
+.moveToLeft{
+    left: 28rem;
+}
+
 
 .buttonSolid{
     cursor: pointer;
@@ -928,6 +935,11 @@ SERVICES
     top:-30rem;
     z-index: 100;
     transition: top .8s;
+    background-color: var(--white);
+}
+.btnMobileNav{
+    margin:0 auto;
+    margin-bottom: 2rem;
 }
 .mobile-menu-item{
     font-size: 1.8rem;
@@ -1184,6 +1196,17 @@ SERVICES
     }
     .spring-text{
         font-size: 1.5rem;
+    }
+    .contact-icon{
+        width: 4rem;
+        height: 4rem;
+    }
+    .contact-info-row{
+        height: 4rem;
+        width: 38rem;
+    }
+    .contact-info-row p{
+        margin-right: 0;
     }
 }
 
