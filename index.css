@@ -42,6 +42,7 @@ html{
 body{
     font-family: 'Montserrat-medium',sans-serif;
     overflow-x: hidden;
+    position: relative;
 }
 
 a{
@@ -440,6 +441,7 @@ a{
     margin-bottom: 2rem;
 }
 .gallery-item{
+    cursor: pointer;
     width: 33.333%;
     height: 100%;
     background-repeat: no-repeat;
@@ -960,7 +962,123 @@ SERVICES
     color: var(--white);
     transition: all .4s;
 } */
-/* 
+
+
+
+.images-carousel{
+    display: none;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 105;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,.9);
+} 
+.images-carousel.showImageCarousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ .images-carousel-wrapper{
+   overflow: hidden;
+   width: 100rem;
+   height: 50rem;
+   position: relative;
+}
+.carousel-infinite{
+    width: 900rem;
+    height: 50rem;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 1s;
+}
+
+.carousel-arrow{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    transform: translate(0,-50%);
+    top: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 106;
+}
+
+.carousel-arrow.right{
+    right: 0;
+    background-image: url(./assets/Images/Icons/arrowRight.svg);
+}
+.carousel-arrow.left{
+    left: 0;
+    background-image: url(./assets/Images/Icons/arrowLeft.svg);
+}
+.images-carousel-item{
+    width: 100rem;
+    height: 50rem;
+    transition: all 1s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.cross{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cross{
+    background-image: url(./assets/Images/Icons/cross.svg);
+}
+
+.images-carousel-item.img1{
+    background-image:url(./assets/Images/garden4.jpg)    
+}
+.images-carousel-item.img2{
+    background-image:url(./assets/Images/garden5.jpg)
+}
+.images-carousel-item.img3{
+    background-image:url(./assets/Images/garden6.jpg)
+}
+.images-carousel-item.img4{
+    background-image:url(./assets/Images/garden7.jpg)
+}
+.images-carousel-item.img5{
+    background-image:url(./assets/Images/garden8.jpg)
+}
+.images-carousel-item.img6{
+    background-image:url(./assets/Images/garden9.jpg)
+}
+.images-carousel-item.img7{
+    background-image:url(./assets/Images/garden10.jpg)
+}
+.images-carousel-item.img8{
+    background-image:url(./assets/Images/garden11.jpg)
+}
+.images-carousel-item.img9{
+    background-image:url(./assets/Images/garden12.jpg)
+}
+
+
+
+
+
+
+
+/*
 ///////////////////////////////
  MEDIA QUERIES
 ///////////////////////////////

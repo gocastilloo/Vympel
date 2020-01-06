@@ -9,6 +9,25 @@
     <script src="https://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 </head>
 <body>
+         <div class="images-carousel">
+             <div class="cross"></div>
+            <div class="images-carousel-wrapper">
+                    <div id="arrowRight" class="carousel-arrow right"></div>
+                    <div id="arrowLeft" class="carousel-arrow left"></div>
+                <div class="carousel-infinite">
+                    <div class="images-carousel-item img1"></div>
+                    <div class="images-carousel-item img2"></div>
+                    <div class="images-carousel-item img3"></div>
+                    <div class="images-carousel-item img4"></div>
+                    <div class="images-carousel-item img5"></div>
+                    <div class="images-carousel-item img6"></div>
+                    <div class="images-carousel-item img7"></div>
+                    <div class="images-carousel-item img8"></div>
+                    <div class="images-carousel-item img9"></div>
+                </div>
+            </div>
+        </div> 
+
         <div class="mobile-menu">
                 <ul>
                     <a id="mobile-nav" href="#home"><li class="mobile-menu-item">HOME</li></a>
@@ -150,19 +169,19 @@
                 <h2>Gallery</h2>
             <div class="gallery-wrapper">
                 <div class="gallery-row">
-                        <div class="gallery-item img1"></div>
-                        <div class="gallery-item img2"></div>
-                        <div class="gallery-item img3"></div>
+                        <div data-pos="0" class="gallery-item img1"></div>
+                        <div data-pos="100" class="gallery-item img2"></div>
+                        <div data-pos="200" class="gallery-item img3"></div>
                 </div>
                 <div class="gallery-row">
-                        <div class="gallery-item img4"></div>
-                        <div class="gallery-item img5"></div>
-                        <div class="gallery-item img6"></div>
+                        <div data-pos="300" class="gallery-item img4"></div>
+                        <div data-pos="400" class="gallery-item img5"></div>
+                        <div data-pos="500" class="gallery-item img6"></div>
                 </div>
                 <div class="gallery-row">
-                        <div class="gallery-item img7"></div>
-                        <div class="gallery-item img8"></div>
-                        <div class="gallery-item img9"></div>
+                        <div data-pos="600" class="gallery-item img7"></div>
+                        <div data-pos="700" class="gallery-item img8"></div>
+                        <div data-pos="800" class="gallery-item img9"></div>
                 </div>
             </div>
             <button class="gallery-btn buttonSolid">Gallery</button>
