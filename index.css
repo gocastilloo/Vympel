@@ -1,7 +1,7 @@
 :root{
-    --green:#2A7D2E;
-    --light-green:rgb(55, 173, 59);
-    --dark-green:#124A2F;
+    --blue:#196DE3;
+    --light-blue:#3994EF;
+    --dark-blue:#151F26;
     --text-color:#A0A0A0;
     --white:#ffffff;
     --muted-grey:#FBF9F6;
@@ -47,7 +47,7 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--green);
+    color: var(--blue);
 }
 
 .contact-info-fixed{
@@ -68,7 +68,7 @@ a{
     height: 6rem;
     width: 40rem;
     margin-bottom: 1rem;
-    background-color: var(--light-green);
+    background-color: var(--light-blue);
     transition: all .4s;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -80,7 +80,7 @@ a{
     margin-right: 5rem;
 }
 .contact-icon{
-    background-color: var(--green);
+    background-color: var(--blue);
     position: absolute;
     right: 0;
     height: 100%;
@@ -130,7 +130,7 @@ a{
 
 .buttonSolid{
     cursor: pointer;
-    background-color: var(--green); 
+    background-color: var(--blue); 
     border: none;
     color: var(--white);
     display: flex;
@@ -204,7 +204,7 @@ a{
 }
 .nav-menu ul{
     display: flex;
-    color: var(--green);
+    color: var(--blue);
 }
 .nav-item{
     list-style: none;
@@ -214,7 +214,7 @@ a{
   
 }
 .home:hover,.about:hover,.services:hover,.gallery:hover,.tips:hover,.contact:hover{
-    border-bottom: 2px solid var(--green);
+    border-bottom: 2px solid var(--blue);
 } 
 .nav-item:not(:last-child){
     margin-right: 2rem;
@@ -225,7 +225,7 @@ a{
     align-items: center;
 }
 .nav-btn button:hover{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
 }
 .hero{
     width: 100%;
@@ -294,7 +294,7 @@ a{
     font-size: 20px;
 }
 .hero-btn:hover{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
 }
 .services-section{
     width: 100%;
@@ -332,7 +332,7 @@ a{
     border-right: 1px solid rgba(0,0,0,.2);
 }
 .services-item h2{
-    color: var(--green);
+    color: var(--blue);
     font-family: 'Montserrat-light',sans-serif;
     text-align: center;
     font-size: 1.8rem;
@@ -347,15 +347,15 @@ a{
     padding-bottom: 8rem;
 }
 .viewMore-btn{
-    border-color: var(--green);
-    color: var(--green);
+    border-color: var(--blue);
+    color: var(--blue);
     position: absolute;
     transform: translate(-50%,0);
     left: 50%;
     bottom: 0;
 }
 .viewMore-btn:hover{
-    background-color: var(--green);
+    background-color: var(--blue);
     color: var(--white);
 }
 .services-icon.icon1{
@@ -406,7 +406,7 @@ a{
     padding: 6rem;
 }
 .ourWork-info h2{
-    color: var(--green);
+    color: var(--blue);
     font-size: 7rem;
     font-family: 'Montserrat-thin',sans-serif;
     text-align: center;
@@ -424,7 +424,7 @@ a{
     padding: 60px 0;
 }
 .gallery-section h2{
-    color: var(--dark-green);
+    color: var(--dark-blue);
     font-size: 4rem;
     text-align: center;
     font-family: 'Montserrat-light',sans-serif;
@@ -487,10 +487,10 @@ a{
     margin-top: 6rem;
 }
 .gallery-btn:hover{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
 }
 .contact-btn:hover{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
 }
 .contact-btn{
     margin: 0 auto;
@@ -505,7 +505,7 @@ a{
 }
 .contact-section h2{
 text-align: center;
-color: var(--dark-green);
+color: var(--dark-blue);
 font-size: 6rem;
 margin-bottom: 2rem;
 }
@@ -537,7 +537,7 @@ footer{
     align-items: center;
 }
 .footer-btn:hover{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
 }
 .footer-btn{
     margin-bottom: 4rem;
@@ -619,7 +619,7 @@ SLIDER 1 COMMENTS
   }
   .slide h3{
       text-align: center;
-      color: var(--green);
+      color: var(--blue);
       font-family: 'Montserrat-semibold',sans-serif;
       font-size: 24px;
       margin-bottom: 6rem;
@@ -698,7 +698,7 @@ ABOUT SECTION
 }
 
 .about-title h1{
-    color: var(--green);
+    color: var(--blue);
     font-size: 7rem;
 }
 .about-mission{
@@ -719,7 +719,7 @@ align-items: center;
 
 }
 .mission-text h2{
-    color: var(--green);
+    color: var(--blue);
     font-size: 5rem;
     margin-bottom: 2rem;
 }
@@ -753,7 +753,7 @@ align-items: center;
     bottom: 0px;
     transform: translateX(-50%);
     width: 4px;
-    background-color: var(--green);
+    background-color: var(--blue);
 }
 .timeline .entries {
     width: calc(100% - 80px);
@@ -776,15 +776,15 @@ align-items: center;
     font-size: 32px;
     margin-bottom: 12px;
     position: relative;
-    color: var(--green);
+    color: var(--blue);
 }
 .timeline .entries .entry .title:before {
     content: '';
     position: absolute;
     width: 8px;
     height: 8px;
-    border: 4px solid var(--dark-green);
-    background-color: var(--dark-green);
+    border: 4px solid var(--dark-blue);
+    background-color: var(--dark-blue);
     border-radius: 100%;
     top: 50%;
     transform: translateY(-50%);
@@ -831,7 +831,7 @@ SERVICES
     padding: 10rem;
 }
 .lawn-maintenance-info h1{
-    color: var(--green);
+    color: var(--blue);
     font-size: 7rem;
     font-family: 'Montserrat-semibold',sans-serif;
     text-align: center;
@@ -851,7 +851,7 @@ SERVICES
     margin: 0 auto;
 }
 .lawn-maintenance-list h3{
-    color: var(--green);
+    color: var(--blue);
     font-size: 3rem;
     padding: 10rem 0;
     text-align: center;
@@ -863,7 +863,7 @@ SERVICES
     align-items: center;
     justify-content: center;
     padding: 2rem 0;
-    border-bottom: 2px dashed var(--green);
+    border-bottom: 2px dashed var(--blue);
     text-align: center;
 }
 .lawn-maintenance-item.item-fertilization{
@@ -882,14 +882,14 @@ SERVICES
     color:var(--text-color)
 }
 .list-number{
-    color: var(--green);
+    color: var(--blue);
     font-size: 5rem;
 }
 .lawn-maintenance-aeration{
     padding-top: 10rem;
 }
 .lawn-maintenance-aeration h2{
-    color: var(--green);
+    color: var(--blue);
     font-size: 5rem;
     text-align: center;
     margin-bottom: 2rem;
@@ -901,13 +901,13 @@ SERVICES
 }
 .lawn-maintenance-subTitle{
     font-size: 6rem;
-    color: var(--green) !important;
+    color: var(--blue) !important;
     text-align: center;
 }
 
 .pruning,.spring{
     font-size:2.8rem;
-    color: var(--green);
+    color: var(--blue);
 }
 .spring{
     margin-bottom: 2rem;
@@ -945,7 +945,7 @@ SERVICES
 }
 .mobile-menu-item{
     font-size: 1.8rem;
-    color: var(--green);
+    color: var(--blue);
     background-color:var(--white);
     padding: 1.5rem 0;
     text-align: center;
@@ -958,7 +958,7 @@ SERVICES
     border-bottom: 1px solid var(--text-color);
 }
 /* .mobile-menu-item:hover{
-    background-color: var(--green);
+    background-color: var(--blue);
     color: var(--white);
     transition: all .4s;
 } */
@@ -1105,7 +1105,7 @@ SERVICES
     }
     .burger-menu span{
         position: absolute;
-        background-color: var(--green);
+        background-color: var(--blue);
         width: 100%;
         height: 2px;
         transform: translate(0,-50%);
@@ -1115,7 +1115,7 @@ SERVICES
         content: '';
         position:absolute;
         top: 10px;
-        background-color: var(--green);
+        background-color: var(--blue);
         width: 100%;
         height: 2px;
         transform: translate(0,-50%);
@@ -1124,7 +1124,7 @@ SERVICES
         content: '';
         position:absolute;
         bottom: 10px;
-        background-color: var(--green);
+        background-color: var(--blue);
         width: 100%;
         height: 2px;
         transform: translate(0,-50%);
